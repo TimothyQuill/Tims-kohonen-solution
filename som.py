@@ -66,10 +66,7 @@ class SOM(Projection):
         return t_0 * decay
 
     def project(self):
-        """
-        This is the main function that projects the data
-        into the 2D space
-        """
+        """ This is the main function that projects the data into 2D space """
         t_0 = self.calculate_t_0()
 
         # For each iteration...
@@ -93,4 +90,3 @@ class SOM(Projection):
         # Update weights
         self.weights = (self.weights + lr * influence[..., np.newaxis]
                         * (input_vec - self.weights))
-
