@@ -3,6 +3,11 @@ from projection import Projection
 
 
 class SOM(Projection):
+
+    """
+    This class implements the Self-Organising Map (SOM) algorithm.
+    """
+
     def __init__(self, data, height, width, iterations=100):
         super().__init__(data, height, width, iterations)
 
