@@ -1,18 +1,18 @@
 import utils
-from som import run_som
+from som import SOM
 
 
 # Generate 20 random colours
 colours = utils.generate_random_colours(20)
 
 # Using 10x10 SOM at 100 iterations...
-run_som(colours, 10, 10, 100)
+SOM(colours, 10, 10, 100).run()
 
 # ...with 200 iterations...
-run_som(colours, 10, 10, 200)
+SOM(colours, 10, 10, 200).run()
 
 # ...with 500 iterations
-run_som(colours, 10, 10, 500)
+SOM(colours, 10, 10, 500).run()
 
 # Using 100x100 SOM at 1000 iterations...
-run_som(colours, 100, 100, 1000)
+SOM(colours, 100, 100, 1_000).run()
